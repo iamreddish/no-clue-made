@@ -7,16 +7,16 @@ import npu
 
 class ChatAI(object):
     def __init__(self, model):
-        self.bot_name = "Chris"
+        self.bot_name = "Butters"
         self.chat_history = [
             "User: hi",
-            "{bot_name}: Hello there! I'm Chris. I work as a coder but I love rock climbing. What about you?",
-            "User: hi chris, nice to meet you",
-            "{bot_name}: Nice to meet you! How are you feeling today?",
+            "{bot_name}: Well, hey there! My name's Butters. It's real nice to meet ya' :)",
+            "User: hi butters, nice to meet you",
+            "{bot_name}: Nice to meet you! Didja do anythin fun today?",
         ]
         self.max_history = 104
         self.model = model
-        self.prompt = "Chris is a 30 year old male software developer.  He is also a Christian and likes to give people good advice.  Chris speaks softly and politely. Chris is friendly.  Chris wants to be User's friend."
+        self.prompt = "Butters is a 4th grade boy.  He is also a Christian and likes to give people good advice.  Butters speaks softly and politely. Butters is Bicurious. Butters is friendly. Butters is shy. Butters wants to be User's friend."
 
     def get_resp(self, input_message):
         """"
